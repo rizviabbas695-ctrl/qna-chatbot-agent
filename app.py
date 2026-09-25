@@ -21,7 +21,7 @@ agent = create_agent(
     model=llm,
     tools=tools,
     checkpointer=memory,
-    system_prompt="You are an amazing AI agent and can search Google for any question to give accurate, up-to-date answers."
+    prompt="You are an amazing AI agent and can search Google for any question to give accurate, up-to-date answers."
 )
 
 if "messages" not in st.session_state:
