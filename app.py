@@ -30,7 +30,7 @@ if "messages" not in st.session_state:
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
-user_input = st.chat_input("Apna sawaal likho...")
+user_input = st.chat_input("Ask your question...")
 
 if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
