@@ -11,7 +11,7 @@ st.title("🤖 Abbasbot AI")
 os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 os.environ["SERPAPI_API_KEY"] = st.secrets["SERPAPI_API_KEY"]
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
 search = SerpAPIWrapper()
 tools = [search.run]
 
