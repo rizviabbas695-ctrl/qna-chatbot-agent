@@ -6,7 +6,7 @@ from langgraph.checkpoint.memory import MemorySaver
 import os
 
 st.set_page_config(page_title="QnA Agent", page_icon="🤖")
-st.title("🤖 QnA Chatbot with Search & Memory")
+st.title("🤖 Abbasbot AI")
 
 os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 os.environ["SERPAPI_API_KEY"] = st.secrets["SERPAPI_API_KEY"]
